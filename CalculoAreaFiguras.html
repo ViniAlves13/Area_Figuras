@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/Style3.css">
+    <script>
+function AreaTriangulo(){
+   
+    var a = parseFloat(document.getElementById("Num1Tri").value) 
+    var b = parseFloat(document.getElementById("Num2Tri").value)
+    var c = (a * b)/2;
+    document.getElementById("Result_Tri").value = c ;
+}
+
+function AreaQuadrado(){
+    var a = parseFloat(document.getElementById("Num3Quad").value) 
+    var c = a * a;
+    document.getElementById("Result_Quad").value = c ;
+}
+function AreaCirculo(){
+    var a =parseFloat(document.getElementById("Num4Circ").value) 
+    var c = 3.14 * (a*a) ;
+    document.getElementById("Result_Circ").value = c ;
+
+}
+function AreaRetangulo(){
+    var a =parseFloat(document.getElementById("Num5Ret").value) 
+    var b = parseFloat(document.getElementById("Num6Ret").value)
+    var c = a * b;
+    document.getElementById("Result_Ret").value = c ;
+
+}
+function AreaTrapezio(){
+    var a =parseFloat(document.getElementById("Num7Tra").value) 
+    var b = parseFloat(document.getElementById("Num8Tra").value)
+    var c = parseFloat(document.getElementById("Num9Tra").value)
+    var d = ((a + b)*c)/2;
+    document.getElementById("Result_Trap").value = d ;
+
+}
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <table>
+        <tr>
+<td>
+    <div>
+        <table class="Table">
+            <tr>
+                <th>
+                Area do Triangulo
+            </th>
+            </tr>
+            
+            <tr align="center"> <td class="td1"> <img src="fotos/Triangulo1.png" alt=""> </td></tr>
+            
+            
+        <tr align="center">
+         <td class="td1">   
+            <br>
+            <div> Base <input type="text" id="Num1Tri" size="10"></div>
+            <div> Altura <input type="text" id="Num2Tri" size="9"></div>
+            <div id="BotaoTriangulo"> <input type="button" id="Botao1" onclick="AreaTriangulo()" value="calc. Area"></div>
+            <br>
+             Area<input type="text" id="Result_Tri" size="10" readonly>
+
+        </td>
+        </tr>
+</table>
+</div>
+</td>
+
+<td>
+<div>
+    <table class="Table">
+        <tr>
+            <th>Area Quadrado</th>
+        </tr>
+        <br>
+        <tr align="center"> <td class="td1"><img src="fotos/quadrado.png" alt=""> </td></tr>
+        <tr align="center">
+        <td class="td1">
+            <br>
+    <div> Lado:<input type="text" id="Num3Quad" size="10"></div>
+    <br>
+   <div> <input type="button" id="Botao2" onclick="AreaQuadrado()" value="calc. Area"></div>
+   <br>
+   Area<input type="text" id="Result_Quad" size="10" readonly>
+</td>
+</tr>
+</table>
+</div>
+</td>
+
+<td>
+<div>
+    <table class="Table">
+        <tr>
+            <th>Area Circulo</th>
+        </tr>
+        <br>
+        <tr align="center"><td class="td1"> <img src="fotos/Circulo.png" alt=""></td></tr>
+        <tr align="center">
+        <td class="td1">
+            <br>
+        <div> Raio:<input type="text" id="Num4Circ"></div>
+        <br>
+        <div><input type="button" id="Botao3" onclick="AreaCirculo()" value="calc. Area"></div>
+        <br>
+        Area<input type="text" id="Result_Circ" size="10" readonly>
+</td>
+</tr>
+</table>
+</div>
+</td>
+
+<td>
+<div>
+    <table class="Table">
+        <tr>
+            <th>Area Retangulo</th>
+        </tr>
+        <br>
+        <tr align="center"><td class="td1"><img src="fotos/Retangulo1.png" alt=""></td></tr>
+        <tr align="center">
+        <td class="td1">
+            <br>
+        <div>Base:<input type="text" id="Num5Ret"></div>
+        <div>Altura:<input type="text" id="Num6Ret"></div>
+        <br>
+        <div><input type="button" id="Botao4" onclick="AreaRetangulo()" value="calc. Area"></div>
+        <br>
+    Area<input type="text" id="Result_Ret" size="10" readonly>
+</td>
+</tr>
+</table>
+</div>
+</td>
+
+<td>
+<div>
+    <table class="Table">
+        <tr>
+            <th>Area Trapezio</th>
+        </tr>
+        <br>
+        <tr align="center"><td class="td1"><img src="fotos/Trapezio.png" alt=""></td> </tr>
+        <tr align="center">
+        <td class="td1">
+            <br>
+    <div> Base maior:<input type="text" id="Num7Tra"></div>
+    <div> Base menor:<input type="text" id="Num8Tra"></div>
+    <div> Altura:<input type="text" id="Num9Tra"></div>
+    <br>
+    <div><input type="button" id="Botao5" onclick="AreaTrapezio()" value="calc. Area"></div>
+    <br>
+    Area<input type="text" id="Result_Trap" size="10" readonly>
+</tr>
+</td>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
